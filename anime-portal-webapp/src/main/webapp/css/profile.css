@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f7;
+    color: #4a4a4a;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 20px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid #eaeaff;
+}
+
+.profile-header h1 {
+    font-size: 28px;
+    color: #2c2c2c;
+    font-weight: 700;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #6a11cb;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 8px;
+    background: rgba(106, 17, 203, 0.08);
+    transition: all 0.2s;
+    font-size: 16px;
+}
+
+.back-link:hover {
+    background: rgba(106, 17, 203, 0.15);
+    color: #5a0fb0;
+}
+
+.user-info {
+    background: white;
+    padding: 26px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    margin-bottom: 36px;
+    border: 1px solid #f0f0f5;
+}
+
+.username {
+    font-size: 26px;
+    color: #6a11cb;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.user-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+}
+
+.user-info strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.anime-list-section h2 {
+    font-size: 24px;
+    margin-bottom: 22px;
+    color: #333;
+    font-weight: 600;
+}
+
+.anime-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.anime-card-block {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    border: 1px solid #eaeaea;
+}
+
+.anime-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.anime-card {
+    padding: 22px;
+    border-left: 4px solid #6a11cb;
+}
+
+.anime-card:hover {
+    transform: none;
+}
+
+.anime-title {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+.anime-title h3 {
+    font-size: 20px;
+    color: #6a11cb;
+    margin: 0;
+    font-weight: 600;
+}
+
+.release-year {
+    color: #7a7a7a;
+    font-size: 16px;
+}
+
+.anime-details p,
+.anime-status p {
+    margin: 8px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.anime-details strong,
+.anime-status strong {
+    color: #333;
+    font-weight: 600;
+}
+
+.status-control {
+    padding: 16px 22px;
+    background: #faf8ff;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-top: 1px solid #f0f0f5;
+}
+
+.status-select {
+    padding: 10px 14px;
+    border: 1px solid #d5d5d9;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+    min-width: 160px;
+    color: #444;
+    transition: border-color 0.2s;
+}
+
+.status-select:focus {
+    outline: none;
+    border-color: #8a4fff;
+    box-shadow: 0 0 0 2px rgba(138, 79, 255, 0.2);
+}
+
+.btn-update-status {
+    padding: 10px 18px;
+    background: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-update-status:hover {
+    background: #5a0fb0;
+    transform: translateY(-1px);
+}
+
+.no-anime {
+    text-align: center;
+    font-size: 18px;
+    color: #7a7a7a;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .container {
+        padding: 16px;
+    }
+
+    .user-info {
+        padding: 20px;
+    }
+
+    .anime-card {
+        padding: 18px;
+    }
+
+    .status-control {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .status-select {
+        width: 100%;
+    }
+}
